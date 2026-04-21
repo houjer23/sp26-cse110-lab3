@@ -108,6 +108,26 @@ form {
   gap: 0.75rem;
 }
 
+.task-board-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.task-card {
+  flex: 1 1 11rem;
+  padding: 0.75rem;
+  border: 1px solid #cbd5e0;
+  border-radius: 0.4rem;
+  background-color: #f8fafc;
+}
+
+.task-card h3 {
+  margin-top: 0;
+}
+
 fieldset {
   padding: 0.75rem;
   border: 1px solid #cbd5e0;
