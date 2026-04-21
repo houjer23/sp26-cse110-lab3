@@ -1,0 +1,20 @@
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  margin: 1rem;
+}
+
+header {
+  background-color: #edf2f7;
+  padding: 0.75rem;
+  border-radius: 0.25rem;
+}
+
+nav a {
+  color: #2c5282;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
