@@ -9,7 +9,7 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Inter", Arial, sans-serif;
   line-height: 1.6;
   color: #1a202c;
   background-color: #f7fafc;
@@ -217,5 +217,62 @@ footer {
 @supports (color: color(display-p3 0.1 0.3 0.6 / 1)) {
   h3 {
     color: color(display-p3 0.1 0.3 0.6 / 1);
+  }
+}
+
+/* Responsive design #9: phone, tablet, desktop */
+@media (max-width: 599px) {
+  body {
+    margin: 0.5rem;
+  }
+
+  header {
+    position: static;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .task-board-container {
+    justify-content: center;
+  }
+
+  .timeline-grid-container {
+    grid-template-columns: 1fr;
+  }
+
+  video {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 1023px) {
+  body {
+    margin: 0.9rem;
+  }
+
+  nav {
+    justify-content: flex-start;
+  }
+
+  .task-card {
+    flex: 1 1 14rem;
+  }
+
+  .timeline-grid-container {
+    grid-template-columns: repeat(2, minmax(12rem, 1fr));
+  }
+}
+
+@media (min-width: 1024px) {
+  main {
+    max-width: 72rem;
+  }
+
+  .timeline-grid-container {
+    grid-template-columns: repeat(4, minmax(12rem, 1fr));
   }
 }
