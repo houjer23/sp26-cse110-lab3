@@ -118,6 +118,7 @@ form {
 
 .task-card {
   flex: 1 1 11rem;
+  min-width: 150px;
   padding: 0.75rem;
   border: 1px solid #cbd5e0;
   border-radius: 0.4rem;
@@ -145,6 +146,11 @@ form {
 
 .timeline-item h3 {
   margin-top: 0;
+}
+
+/* Combining two selectors: element.class */
+article.task-card {
+  border-left-width: 0.12in;
 }
 
 fieldset {
@@ -210,8 +216,18 @@ section:has(video) {
 footer {
   color: orange;
   text-align: center;
-  font-size: 0.9rem;
+  font-size: 9pt;
   margin-top: 2vh;
+}
+
+/* Extra display values from checklist and additional absolute units */
+span {
+  display: inline-block;
+  margin-left: 0.4cm;
+}
+
+.sr-only-note {
+  display: none;
 }
 
 @supports (color: color(display-p3 0.1 0.3 0.6 / 1)) {
