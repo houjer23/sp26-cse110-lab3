@@ -172,6 +172,41 @@ button:active {
   background-color: #1a365d;
 }
 
+/* Selector checklist #8 */
+#attendance {
+  scroll-margin-top: 5rem;
+}
+
+input[placeholder] {
+  border-color: #a0aec0;
+}
+
+#task-board > h2 {
+  margin-bottom: 0.75rem;
+}
+
+#comments h2 + ul {
+  margin-top: 0.25rem;
+}
+
+#comments h2 ~ details {
+  margin-top: 0.5rem;
+}
+
+section#timeline-grid .timeline-item {
+  box-shadow: 0 1px 2px rgba(15, 23, 42, 0.08);
+}
+
+section:has(video) {
+  outline: 2px dashed rgba(44, 82, 130, 0.25);
+}
+
+#task-board {
+  .task-card p {
+    margin-bottom: 0;
+  }
+}
+
 footer {
   color: orange;
   text-align: center;
